@@ -154,11 +154,11 @@
 
         base {
             bindings = <
-&none       &none              &none     &none         &none        &none     &none          &none            &none              &none     &none               &none
-&kp ESC     &kp B              &kp L     &kp D         &kp W        &kp V     &kp SEMICOLON  &kp F            &kp O              &kp U     &kp J               &kp BSPC
-&kp TAB     &hml LEFT_SHIFT N  &kp R     &kp T         &kp S        &kp G     &kp Y          &kp H            &kp A              &kp E     &hmr RIGHT_SHIFT I  &kp APOS
-&caps_word  &kp Q              &kp X     &kp M         &kp C        &kp Z     &kp K          &kp P            &kp COMMA          &kp DOT   &kp FSLH            &kp ENTER
-            &kp LEFT_CONTROL   &kp LALT  &kp LEFT_GUI  &lt 1 SPACE  &gresc    &lt 3 ENTER    &lt 2 BACKSPACE  &kp RIGHT_CONTROL  &kp LALT  &kp RIGHT_GUI
+&none       &none              &none                &none            &none            &none     &none          &none             &none              &none                 &none               &none
+&kp ESC     &kp B              &kp L                &kp D            &kp W            &kp V     &kp SEMICOLON  &kp F             &kp O              &kp U                 &kp J               &kp BSPC
+&kp TAB     &hml LEFT_SHIFT N  &hml LEFT_CONTROL R  &hml LEFT_ALT T  &hml LEFT_GUI S  &kp G     &kp Y          &hmr RIGHT_GUI H  &hmr RIGHT_ALT A   &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &kp APOS
+&caps_word  &kp Q              &kp X                &kp M            &kp C            &kp Z     &kp K          &kp P             &kp COMMA          &kp DOT               &kp FSLH            &kp ENTER
+            &kp LEFT_CONTROL   &kp LALT             &kp LEFT_GUI     &lt 1 SPACE      &gresc    &lt 3 ENTER    &lt 2 BACKSPACE   &kp RIGHT_CONTROL  &kp LALT              &kp RIGHT_GUI
             >;
         };
 
