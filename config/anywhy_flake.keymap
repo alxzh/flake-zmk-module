@@ -73,11 +73,11 @@
             label = "EQEQ";
         };
 
-        logout: logout {
+        mac_logout: mac_logout {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LC(Q))>;
-            label = "LOGOUT";
+            label = "MAC_LOGOUT";
         };
 
         mac_copy: mac_copy {
@@ -199,20 +199,20 @@
 
         num {
             bindings = <
-&none  &none           &none          &none       &none         &none       &none      &none                      &none   &none   &none      &none
-&none  &kp ESC         &kp BACKSPACE  &kp TAB     &kp ENTER     &kp DEL     &kp SQT    &kp N7                     &kp N8  &kp N9  &kp MINUS  &none
-&none  &kp LEFT_SHIFT  &kp LALT       &kp LCTRL   &kp LEFT_GUI  &kp LBKT    &kp EQUAL  &kp N4                     &kp N5  &kp N6  &kp N0     &none
-&none  &kp K_UNDO      &kp K_CUT      &kp K_COPY  &kp K_PASTE   &kp RBKT    &kp GRAVE  &kp N1                     &kp N2  &kp N3  &kp BSLH   &none
-       &trans          &trans         &trans      &trans        &none       &kp ENTER  &mt RIGHT_SHIFT BACKSPACE  &trans  &trans  &trans
+&none  &none           &none          &none      &none         &none       &none      &none                      &none   &none   &none      &none
+&none  &kp ESC         &kp BACKSPACE  &kp TAB    &kp ENTER     &kp DEL     &kp SQT    &kp N7                     &kp N8  &kp N9  &kp MINUS  &none
+&none  &kp LEFT_SHIFT  &kp LALT       &kp LCTRL  &kp LEFT_GUI  &kp LBKT    &kp EQUAL  &kp N4                     &kp N5  &kp N6  &kp N0     &none
+&none  &mac_undo       &macos_cut     &mac_copy  &mac_paste    &kp RBKT    &kp GRAVE  &kp N1                     &kp N2  &kp N3  &kp BSLH   &none
+       &trans          &trans         &trans     &trans        &none       &kp ENTER  &mt RIGHT_SHIFT BACKSPACE  &trans  &trans  &trans
             >;
         };
 
         nav {
             bindings = <
-&none  &none             &none              &none                 &none                  &none                &none        &none       &none          &none         &none       &none
-&none  &kp EXCLAMATION   &kp LESS_THAN      &kp MINUS             &kp GREATER_THAN       &kp DOUBLE_QUOTES    &kp PERCENT  &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP  &kp K_LOCK  &none
-&none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK         &kp HASH     &kp LEFT    &kp DOWN       &kp UP_ARROW  &kp RIGHT   &none
-&none  &kp AT            &kp PIPE           &kp UNDERSCORE        &kp AMPS               &kp CARET            &kp DOLLAR   &kp HOME    &kp PAGE_DOWN  &kp PG_UP     &kp END     &none
+&none  &none             &none              &none                 &none                  &none                &none        &none       &none          &none         &none        &none
+&none  &kp EXCLAMATION   &kp LESS_THAN      &kp MINUS             &kp GREATER_THAN       &kp DOUBLE_QUOTES    &kp PERCENT  &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP  &mac_logout  &none
+&none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK         &kp HASH     &kp LEFT    &kp DOWN       &kp UP_ARROW  &kp RIGHT    &none
+&none  &kp AT            &kp PIPE           &kp UNDERSCORE        &kp AMPS               &kp CARET            &kp DOLLAR   &kp HOME    &kp PAGE_DOWN  &kp PG_UP     &kp END      &none
        &trans            &trans             &trans                &mt LEFT_SHIFT SPACE   &none                &none        &trans      &trans         &trans        &trans
             >;
         };
