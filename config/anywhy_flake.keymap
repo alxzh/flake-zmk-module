@@ -72,6 +72,41 @@
             bindings = <&kp EQUAL &kp EQUAL>;
             label = "EQEQ";
         };
+
+        logout: logout {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(Q))>;
+            label = "LOGOUT";
+        };
+
+        mac_copy: mac_copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(C)>;
+            label = "MAC_COPY";
+        };
+
+        mac_paste: mac_paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(V)>;
+            label = "MAC_PASTE";
+        };
+
+        macos_cut: macos_cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(X)>;
+            label = "MACOS_CUT";
+        };
+
+        mac_undo: mac_undo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(Z)>;
+            label = "MAC_UNDO";
+        };
     };
 
     behaviors {
