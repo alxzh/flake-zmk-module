@@ -24,12 +24,37 @@
 
         colon {
             bindings = <&kp COLON>;
-            key-positions = <20 19>;
+            key-positions = <19 20>;
         };
 
         semi_colon {
             bindings = <&kp SEMICOLON>;
-            key-positions = <20 21>;
+            key-positions = <16 15>;
+        };
+
+        dash {
+            bindings = <&kp MINUS>;
+            key-positions = <32 33>;
+        };
+
+        underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <34 33>;
+        };
+
+        star {
+            bindings = <&kp ASTERISK>;
+            key-positions = <28 27>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <31 32>;
+        };
+
+        divide {
+            bindings = <&kp SLASH>;
+            key-positions = <27 26>;
         };
     };
 
