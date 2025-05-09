@@ -189,21 +189,21 @@
 
         base {
             bindings = <
-&none       &none              &none                &none            &none            &none     &none          &none             &none              &none                 &none               &none
-&kp ESC     &kp B              &kp L                &kp D            &kp W            &kp V     &kp SEMICOLON  &kp F             &kp O              &kp U                 &kp J               &kp BSPC
-&kp TAB     &hml LEFT_SHIFT N  &hml LEFT_CONTROL R  &hml LEFT_ALT T  &hml LEFT_GUI S  &kp G     &kp Y          &hmr RIGHT_GUI H  &hmr RIGHT_ALT A   &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &kp APOS
-&caps_word  &kp Q              &kp X                &kp M            &kp C            &kp Z     &kp K          &kp P             &kp COMMA          &kp DOT               &kp FSLH            &kp ENTER
-            &kp LEFT_CONTROL   &kp LALT             &kp LEFT_GUI     &lt 1 SPACE      &gresc    &lt 3 ENTER    &lt 2 BACKSPACE   &kp RIGHT_CONTROL  &kp LALT              &kp RIGHT_GUI
+&none       &none              &none                &none            &none            &none     &none        &none             &none              &none                 &none               &none
+&kp ESC     &kp B              &kp L                &kp D            &kp W            &kp Q     &kp SQT      &kp F             &kp O              &kp U                 &kp J               &kp BSPC
+&kp TAB     &hml LEFT_SHIFT N  &hml LEFT_CONTROL R  &hml LEFT_ALT T  &hml LEFT_GUI S  &kp G     &kp Y        &hmr RIGHT_GUI H  &hmr RIGHT_ALT A   &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &kp SEMICOLON
+&caps_word  &kp X              &kp V                &kp M            &kp C            &kp Z     &kp K        &kp P             &kp COMMA          &kp DOT               &kp FSLH            &kp ENTER
+            &kp LEFT_CONTROL   &kp LALT             &kp LEFT_GUI     &lt 1 SPACE      &gresc    &lt 3 ENTER  &lt 2 BACKSPACE   &kp RIGHT_CONTROL  &kp LALT              &kp RIGHT_GUI
             >;
         };
 
         num {
             bindings = <
-&none  &none           &none          &none      &none         &none       &none      &none                      &none   &none   &none      &none
-&none  &kp ESC         &kp BACKSPACE  &kp TAB    &kp ENTER     &kp DEL     &kp SQT    &kp N7                     &kp N8  &kp N9  &kp MINUS  &none
-&none  &kp LEFT_SHIFT  &kp LALT       &kp LCTRL  &kp LEFT_GUI  &kp LBKT    &kp EQUAL  &kp N4                     &kp N5  &kp N6  &kp N0     &none
-&none  &mac_undo       &macos_cut     &mac_copy  &mac_paste    &kp RBKT    &kp GRAVE  &kp N1                     &kp N2  &kp N3  &kp BSLH   &none
-       &trans          &trans         &trans     &trans        &none       &kp ENTER  &mt RIGHT_SHIFT BACKSPACE  &trans  &trans  &trans
+&none  &none           &none          &none      &none         &none       &none          &none                      &none   &none   &none      &none
+&none  &kp ESC         &kp BACKSPACE  &kp TAB    &kp ENTER     &kp DEL     &kp SEMICOLON  &kp N7                     &kp N8  &kp N9  &kp MINUS  &none
+&none  &kp LEFT_SHIFT  &kp LALT       &kp LCTRL  &kp LEFT_GUI  &kp LBKT    &kp EQUAL      &kp N4                     &kp N5  &kp N6  &kp N0     &none
+&none  &mac_undo       &macos_cut     &mac_copy  &mac_paste    &kp RBKT    &kp GRAVE      &kp N1                     &kp N2  &kp N3  &kp BSLH   &none
+       &trans          &trans         &trans     &trans        &none       &kp ENTER      &mt RIGHT_SHIFT BACKSPACE  &trans  &trans  &trans
             >;
         };
 
