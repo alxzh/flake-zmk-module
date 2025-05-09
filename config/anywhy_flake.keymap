@@ -21,6 +21,16 @@
             key-positions = <29 30>;
             layers = <0>;
         };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <20 19>;
+        };
+
+        semi_colon {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <20 21>;
+        };
     };
 
     macros {
