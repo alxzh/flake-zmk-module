@@ -79,6 +79,14 @@
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <25 26>;
+            timeout-ms = <20>;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
     };
 
     macros {
