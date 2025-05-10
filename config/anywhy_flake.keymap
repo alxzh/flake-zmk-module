@@ -18,7 +18,7 @@
 
         caps_word_trigger {
             bindings = <&caps_word>;
-            key-positions = <29 30>;
+            key-positions = <16 19>;
             layers = <0>;
             timeout-ms = <20>;
             require-prior-idle-ms = <150>;
