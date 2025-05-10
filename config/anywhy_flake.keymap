@@ -20,41 +20,56 @@
             bindings = <&caps_word>;
             key-positions = <29 30>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         colon {
             bindings = <&kp COLON>;
             key-positions = <19 20>;
+            timeout-ms = <50>;
+            layers = <0>;
         };
 
         semi_colon {
             bindings = <&kp SEMICOLON>;
             key-positions = <16 15>;
+            timeout-ms = <50>;
+            layers = <0>;
         };
 
         dash {
             bindings = <&kp MINUS>;
             key-positions = <32 33>;
+            layers = <0>;
+            timeout-ms = <50>;
         };
 
         underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <34 33>;
+            timeout-ms = <50>;
+            layers = <0>;
         };
 
         star {
             bindings = <&kp ASTERISK>;
             key-positions = <28 27>;
+            timeout-ms = <50>;
+            layers = <0>;
         };
 
         plus {
             bindings = <&kp PLUS>;
             key-positions = <31 32>;
+            timeout-ms = <50>;
+            layers = <0>;
         };
 
         divide {
             bindings = <&kp SLASH>;
             key-positions = <27 26>;
+            timeout-ms = <50>;
+            layers = <0>;
         };
     };
 
