@@ -250,15 +250,6 @@
             hold-trigger-on-release;
             require-prior-idle-ms = <100>;
         };
-
-        morph: morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MORPH";
-            bindings = <&kp I>, <&kp SEMICOLON>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL|MOD_LALT)>;
-        };
     };
 
     keymap {
