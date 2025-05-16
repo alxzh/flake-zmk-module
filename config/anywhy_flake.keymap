@@ -12,6 +12,8 @@
     quick-tap-ms = <150>;
 };
 
+&gresc { mods = <(MOD_LSFT|MOD_RSFT)>; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -247,6 +249,15 @@
             hold-trigger-key-positions = <13 14 15 16 25 26 27 28 37 38 39 40 17 29 41>;
             hold-trigger-on-release;
             require-prior-idle-ms = <100>;
+        };
+
+        morph: morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORPH";
+            bindings = <&kp I>, <&kp SEMICOLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT)>;
         };
     };
 
