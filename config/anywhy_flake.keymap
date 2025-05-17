@@ -305,11 +305,11 @@
 
         nav {
             bindings = <
-&none  &none                        &none                           &none                          &none                            &none              &none        &none       &none          &none         &none        &none
-&none  &kp EQUAL                    &kp LESS_THAN                   &kp MINUS                      &kp GREATER_THAN                 &kp EXCLAMATION    &kp PERCENT  &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP  &mac_logout  &none
-&none  &mt LEFT_SHIFT LEFT_BRACKET  &mt LEFT_CONTROL RIGHT_BRACKET  &mt LEFT_ALT LEFT_PARENTHESIS  &hml LEFT_GUI RIGHT_PARENTHESIS  &kp HASH           &kp ASTRK    &kp LEFT    &kp DOWN       &kp UP_ARROW  &kp RIGHT    &none
-&none  &kp AT                       &kp PIPE                        &kp UNDERSCORE                 &kp AMPS                         &kp DOLLAR         &kp TILDE    &kp HOME    &kp PAGE_DOWN  &kp PG_UP     &kp END      &none
-       &trans                       &trans                          &trans                         &mt LEFT_SHIFT SPACE             &kp COLON          &none        &trans      &trans         &trans        &trans
+&none  &none                        &none                           &none                          &none                           &none              &none        &none       &none          &none         &none        &none
+&none  &kp EQUAL                    &kp LESS_THAN                   &kp MINUS                      &kp GREATER_THAN                &kp EXCLAMATION    &kp PERCENT  &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP  &mac_logout  &none
+&none  &mt LEFT_SHIFT LEFT_BRACKET  &mt LEFT_CONTROL RIGHT_BRACKET  &mt LEFT_ALT LEFT_PARENTHESIS  &mt LEFT_GUI RIGHT_PARENTHESIS  &kp HASH           &kp ASTRK    &kp LEFT    &kp DOWN       &kp UP_ARROW  &kp RIGHT    &none
+&none  &kp AT                       &kp PIPE                        &kp UNDERSCORE                 &kp AMPS                        &kp DOLLAR         &kp TILDE    &kp HOME    &kp PAGE_DOWN  &kp PG_UP     &kp END      &none
+       &trans                       &trans                          &trans                         &mt LEFT_SHIFT SPACE            &kp COLON          &none        &trans      &trans         &trans        &trans
             >;
         };
 
