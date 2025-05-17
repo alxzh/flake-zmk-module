@@ -294,5 +294,15 @@
         &trans     &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans
             >;
         };
+
+        sym {
+            bindings = <
+&trans  &trans           &trans        &trans            &trans             &trans        &trans  &trans                &trans                 &trans     &trans         &trans
+&trans  &kp EXCLAMATION  &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans        &trans  &kp LESS_THAN         &kp GREATER_THAN       &kp MINUS  &kp COLON      &trans
+&trans  &kp UNDERSCORE   &kp ASTERISK  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp DOLLAR    &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS   &kp SEMICOLON  &trans
+&trans  &kp AT_SIGN      &trans        &trans            &kp AMPERSAND      &trans        &trans  &trans                &trans                 &trans     &kp SLASH      &trans
+        &trans           &trans        &trans            &trans             &trans        &trans  &trans                &trans                 &trans     &trans
+            >;
+        };
     };
 };
