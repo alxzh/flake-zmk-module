@@ -12,7 +12,7 @@
     quick-tap-ms = <150>;
 };
 
-&gresc { mods = <(MOD_LSFT|MOD_RSFT)>; };
+&gresc { mods = <(MOD_LALT|MOD_RALT)>; };
 
 / {
     combos {
