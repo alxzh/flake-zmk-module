@@ -294,7 +294,7 @@
             bindings = <&kp SLASH>, <&kp SEMICOLON>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LALT)>;
         };
     };
 
