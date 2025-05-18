@@ -35,7 +35,7 @@
         };
 
         lto_sym {
-            bindings = <&mo 4>;
+            bindings = <&mo 3>;
             key-positions = <28 27>;
             timeout-ms = <20>;
             layers = <0>;
@@ -43,7 +43,7 @@
         };
 
         rto_sym {
-            bindings = <&mo 4>;
+            bindings = <&mo 3>;
             key-positions = <31 32>;
             timeout-ms = <20>;
             layers = <0>;
@@ -284,8 +284,8 @@
 &none       &none              &none                &none            &none            &none     &none        &none             &none             &none                 &none             &none
 &kp ESC     &kp B              &kp L                &kp D            &kp W            &kp Q     &kp SQT      &kp F             &kp O             &kp U                 &kp J             &kp BSPC
 &kp TAB     &hml LEFT_SHIFT N  &hml LEFT_CONTROL R  &hml LEFT_ALT T  &hml LEFT_GUI S  &kp G     &kp Y        &hmr RIGHT_GUI H  &hmr RIGHT_ALT A  &hmr RIGHT_CONTROL E  &i_colon          &kp SEMICOLON
-&caps_word  &kp X              &kp V                &kp M            &ltl 4 C         &kp Z     &kp K        &ltr 4 P          &comma_minus      &dot_underscore       &slash_semicolon  &kp ENTER
-            &kp LEFT_CONTROL   &kp LALT             &kp SEMICOLON    &lt 1 SPACE      &gresc    &lt 3 ENTER  &lt 2 BACKSPACE   &kp MINUS         &kp LALT              &kp RIGHT_GUI
+&caps_word  &kp X              &kp V                &kp M            &ltl 3 C         &kp Z     &kp K        &ltr 3 P          &comma_minus      &dot_underscore       &slash_semicolon  &kp ENTER
+            &kp LEFT_CONTROL   &kp LALT             &kp SEMICOLON    &lt 1 SPACE      &gresc    &lt 4 ENTER  &lt 2 BACKSPACE   &kp MINUS         &kp LALT              &kp RIGHT_GUI
             >;
         };
 
@@ -309,16 +309,6 @@
             >;
         };
 
-        controls {
-            bindings = <
-&trans  &trans     &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &bt_clr_0  &bt_clr_1  &bt_clr_2  &bt_clr_3  &bt_clr_4         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &bt0       &bt1       &bt2       &bt3       &bt4              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &soft_off  &trans     &trans     &trans     &studio_unlock    &trans  &trans  &trans  &trans  &trans  &trans
-        &trans     &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
         sym {
             bindings = <
 &trans  &trans           &trans         &trans            &trans             &trans           &trans       &trans                &trans                 &trans         &trans             &trans
@@ -326,6 +316,16 @@
 &trans  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp AMPERSAND    &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES  &trans
 &trans  &kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT      &kp AT_SIGN  &kp COLON             &kp COMMA              &kp PERIOD     &kp SQT            &trans
         &trans           &trans         &trans            &trans             &trans           &trans       &trans                &trans                 &trans         &trans
+            >;
+        };
+
+        controls {
+            bindings = <
+&trans  &trans     &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &bt_clr_0  &bt_clr_1  &bt_clr_2  &bt_clr_3  &bt_clr_4         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &bt0       &bt1       &bt2       &bt3       &bt4              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &soft_off  &trans     &trans     &trans     &studio_unlock    &trans  &trans  &trans  &trans  &trans  &trans
+        &trans     &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
