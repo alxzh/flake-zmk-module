@@ -268,6 +268,16 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
         };
+
+        cmd_tab: cmd_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CMD_TAB";
+            bindings = <&kp W>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
+        };
     };
 
     keymap {
@@ -275,31 +285,31 @@
 
         base {
             bindings = <
-&none       &none              &none                &none          &none            &none     &none        &none             &none         &none                 &none               &none
-&kp ESC     &kp B              &kp L                &kp D          &kp W            &kp Q     &kp SQT      &kp F             &kp O         &kp U                 &kp J               &kp BSPC
-&kp TAB     &hml LEFT_SHIFT N  &hml LEFT_CONTROL R  &ltl 3 T       &hml LEFT_GUI S  &kp G     &kp Y        &hmr RIGHT_GUI H  &ltr 3 A      &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &kp SEMICOLON
-&caps_word  &kp V              &kp X                &kp M          &kp C            &kp Z     &kp K        &kp P             &comma_minus  &dot_underscore       &slash_semicolon    &kp ENTER
-            &kp LEFT_CONTROL   &kp LALT             &kp SEMICOLON  &lt 1 SPACE      &gresc    &lt 4 ENTER  &lt 2 BACKSPACE   &kp MINUS     &kp LALT              &kp RIGHT_GUI
+&none       &none              &none                &none                       &none      &none     &none        &none          &none                &none                 &none               &none
+&kp ESC     &kp B              &kp L                &kp D                       &kp W      &kp Q     &kp SQT      &kp F          &kp O                &kp U                 &kp J               &kp BSPC
+&kp TAB     &hml LEFT_SHIFT N  &hml LEFT_CONTROL R  &ltl 3 T                    &ltl 2 S   &kp G     &kp Y        &ltr 1 H       &ltr 3 A             &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &kp SEMICOLON
+&caps_word  &kp V              &kp X                &kp M                       &kp C      &kp Z     &kp K        &kp P          &comma_minus         &dot_underscore       &slash_semicolon    &kp ENTER
+            &kp LEFT_CONTROL   &kp LALT             &mt LEFT_COMMAND SEMICOLON  &kp SPACE  &gresc    &lt 4 ENTER  &kp BACKSPACE  &mt RIGHT_GUI MINUS  &kp LALT              &kp RCTRL
             >;
         };
 
         num {
             bindings = <
-&none  &none           &none             &none         &none         &none         &none       &none            &none   &none   &none         &none
-&none  &kp ESC         &kp BACKSPACE     &kp TAB       &kp ENTER     &kp DEL       &kp MINUS   &kp N7           &kp N8  &kp N9  &kp ASTERISK  &none
-&none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &caps_word    &kp EQUAL   &kp N4           &kp N5  &kp N6  &kp N0        &none
-&none  &mac_undo       &macos_cut        &mac_copy     &mac_paste    &arrow        &kp PERIOD  &kp N1           &kp N2  &kp N3  &kp SLASH     &none
-       &trans          &trans            &trans        &trans        &none         &kp ENTER   &lt 2 BACKSPACE  &trans  &trans  &trans
+&none  &none      &none         &none         &none         &none           &none      &none            &none   &none   &none   &none
+&none  &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK    &trans     &trans           &trans  &trans  &trans  &none
+&none  &kp MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH       &trans     &trans           &trans  &trans  &trans  &none
+&none  &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD      &trans     &trans           &trans  &trans  &trans  &none
+       &trans     &trans        &trans        &trans        &none           &kp ENTER  &lt 2 BACKSPACE  &trans  &trans  &trans
             >;
         };
 
         nav {
             bindings = <
-&none  &none                        &none                           &none                          &none                           &none              &none        &none       &none          &none         &none        &none
-&none  &kp EQUAL                    &kp LESS_THAN                   &kp MINUS                      &kp GREATER_THAN                &kp EXCLAMATION    &kp PERCENT  &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP  &mac_logout  &none
-&none  &mt LEFT_SHIFT LEFT_BRACKET  &mt LEFT_CONTROL RIGHT_BRACKET  &mt LEFT_ALT LEFT_PARENTHESIS  &mt LEFT_GUI RIGHT_PARENTHESIS  &kp HASH           &kp ASTRK    &kp LEFT    &kp DOWN       &kp UP_ARROW  &kp RIGHT    &none
-&none  &kp AT                       &kp PIPE                        &kp UNDERSCORE                 &kp AMPS                        &kp DOLLAR         &kp TILDE    &kp HOME    &kp PAGE_DOWN  &kp PG_UP     &kp END      &none
-       &trans                       &trans                          &trans                         &mt LEFT_SHIFT SPACE            &kp COLON          &none        &trans      &trans         &trans        &trans
+&none  &none   &none   &none   &none      &none         &none       &none       &none          &none         &none        &none
+&none  &trans  &trans  &trans  &trans     &trans        &kp DEL     &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP  &mac_logout  &none
+&none  &trans  &trans  &trans  &trans     &trans        &kp TAB     &kp LEFT    &kp DOWN       &kp UP_ARROW  &kp RIGHT    &none
+&none  &trans  &trans  &trans  &trans     &trans        &caps_word  &kp HOME    &kp PAGE_DOWN  &kp PG_UP     &kp END      &none
+       &trans  &trans  &trans  &kp SPACE  &caps_word    &none       &trans      &trans         &trans        &trans
             >;
         };
 
