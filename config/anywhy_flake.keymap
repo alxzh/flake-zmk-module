@@ -295,21 +295,21 @@
 
         num {
             bindings = <
-&none  &none      &none         &none         &none         &none           &none      &none            &none   &none   &none   &none
-&none  &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK    &trans     &trans           &trans  &trans  &trans  &none
-&none  &kp MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH       &trans     &trans           &trans  &trans  &trans  &none
-&none  &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD      &trans     &trans           &trans  &trans  &trans  &none
-       &trans     &trans        &trans        &trans        &none           &kp ENTER  &lt 2 BACKSPACE  &trans  &trans  &trans
+&none  &none      &none         &none         &none         &none           &none      &none   &none          &none              &none            &none
+&none  &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK    &none      &none   &none          &none              &none            &none
+&none  &kp MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH       &none      &none   &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &none
+&none  &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD      &none      &none   &none          &none              &none            &none
+       &none      &none         &kp NUMBER_0  &kp SPACE     &none           &kp ENTER  &trans  &kp RIGHT_GUI  &none              &none
             >;
         };
 
         nav {
             bindings = <
-&none  &none   &none   &none   &none      &none         &none       &none       &none          &none         &none        &none
-&none  &trans  &trans  &trans  &trans     &trans        &kp DEL     &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP  &mac_logout  &none
-&none  &trans  &trans  &trans  &trans     &trans        &kp TAB     &kp LEFT    &kp DOWN       &kp UP_ARROW  &kp RIGHT    &none
-&none  &trans  &trans  &trans  &trans     &trans        &caps_word  &kp HOME    &kp PAGE_DOWN  &kp PG_UP     &kp END      &none
-       &trans  &trans  &trans  &kp SPACE  &caps_word    &none       &trans      &trans         &trans        &trans
+&none  &none           &none             &none         &none         &none         &none    &none       &none          &none         &none        &none
+&none  &none           &none             &kp TAB       &none         &none         &kp DEL  &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP  &mac_logout  &none
+&none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &none         &none         &kp TAB  &kp LEFT    &kp DOWN       &kp UP_ARROW  &kp RIGHT    &none
+&none  &none           &none             &none         &none         &none         &none    &kp HOME    &kp PAGE_DOWN  &kp PG_UP     &kp END      &none
+       &none           &none             &none         &kp LEFT_GUI  &caps_word    &trans   &trans      &none          &none         &none
             >;
         };
 
