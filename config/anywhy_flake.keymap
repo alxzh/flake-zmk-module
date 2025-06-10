@@ -38,7 +38,7 @@
         };
 
         lto_sym {
-            bindings = <&mo 2>;
+            bindings = <&kp LEFT_GUI>;
             key-positions = <28 27>;
             timeout-ms = <20>;
             layers = <0>;
@@ -46,7 +46,7 @@
         };
 
         rto_sym {
-            bindings = <&mo 1>;
+            bindings = <&kp RIGHT_GUI>;
             key-positions = <31 32>;
             timeout-ms = <20>;
             layers = <0>;
