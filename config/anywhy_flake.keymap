@@ -21,22 +21,6 @@
     combos {
         compatible = "zmk,combos";
 
-        caps_word_trigger {
-            bindings = <&caps_word>;
-            key-positions = <16 19>;
-            layers = <0>;
-            timeout-ms = <20>;
-            require-prior-idle-ms = <150>;
-        };
-
-        colon {
-            bindings = <&kp COLON>;
-            key-positions = <19 20>;
-            timeout-ms = <20>;
-            layers = <0>;
-            require-prior-idle-ms = <150>;
-        };
-
         lto_sym {
             bindings = <&kp LEFT_GUI>;
             key-positions = <28 27>;
