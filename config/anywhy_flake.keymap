@@ -226,33 +226,6 @@
             require-prior-idle-ms = <100>;
         };
 
-        slash_semicolon: slash_semicolon {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SLASH_SEMICOLON";
-            bindings = <&kp SLASH>, <&kp SEMICOLON>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-
-        dot_underscore: dot_underscore {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DOT_UNDERSCORE";
-            bindings = <&kp PERIOD>, <&kp UNDERSCORE>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-
-        comma_minus: comma_minus {
-            compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_MINUS";
-            bindings = <&kp COMMA>, <&kp MINUS>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-
         spc_tab: spc_tab {
             compatible = "zmk,behavior-mod-morph";
             label = "SPC_TAB";
