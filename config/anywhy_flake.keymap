@@ -218,7 +218,7 @@
             bindings = <&kp SPACE>, <&kp TAB>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LGUI)>;
         };
 
         lt_spc_tab: lt_spc_tab {
@@ -251,7 +251,7 @@
 &none  &none           &none             &none         &none         &none         &none       &none         &none         &none         &none         &none
 &none  &none           &none             &none         &none         &none         &kp PLUS    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &none
 &none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &caps_word    &kp MINUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &none
-&none  &none           &none             &none         &none         &none         &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &none
+&none  &mac_undo       &macos_cut        &mac_copy     &mac_paste    &none         &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &none
        &none           &none             &trans        &trans        &trans        &kp ENTER   &trans        &trans        &none         &none
             >;
         };
