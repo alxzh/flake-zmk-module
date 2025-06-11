@@ -289,11 +289,11 @@
 
         num {
             bindings = <
-&none  &none           &none             &none         &none         &none         &none       &none          &none          &none         &none         &none
-&none  &none           &none             &none         &none         &none         &kp PLUS    &kp NUMBER_7   &kp NUMBER_8   &kp NUMBER_9  &kp ASTERISK  &none
-&none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &caps_word    &kp MINUS   &kp NUMBER_4   &kp NUMBER_5   &kp NUMBER_6  &kp NUMBER_0  &none
-&none  &none           &none             &none         &none         &none         &kp PERIOD  &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3  &kp SLASH     &none
-       &none           &none             &trans        &trans        &trans        &kp ENTER   &kp BACKSPACE  &kp RIGHT_GUI  &none         &none
+&none  &none           &none             &none         &none         &none         &none       &none         &none         &none         &none         &none
+&none  &none           &none             &none         &none         &none         &kp PLUS    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &none
+&none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &caps_word    &kp MINUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &none
+&none  &none           &none             &none         &none         &none         &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &none
+       &none           &none             &trans        &trans        &trans        &kp ENTER   &trans        &trans        &none         &none
             >;
         };
 
@@ -311,9 +311,9 @@
             bindings = <
 &none  &none            &none          &none             &none              &none          &none       &none                 &none                  &none          &none          &none
 &none  &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE       &kp CARET   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPERSAND  &kp BACKSLASH  &none
-&none  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp HASH       &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp UNDER      &none
-&none  &kp AT_SIGN      &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT    &kp TILDE   &kp COLON             &kp COMMA              &kp PERIOD     &kp QUESTION   &none
-       &trans           &trans         &trans            &trans             &trans         &trans      &trans                &trans                 &trans         &trans
+&none  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp HASH       &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp COLON      &none
+&none  &kp AT_SIGN      &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT    &kp TILDE   &kp UNDERSCORE        &kp COMMA              &kp PERIOD     &kp QUESTION   &none
+       &trans           &trans         &trans            &trans             &trans         &kp ENTER   &trans                &trans                 &trans         &trans
             >;
         };
 
