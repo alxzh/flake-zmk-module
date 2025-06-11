@@ -22,7 +22,7 @@
         compatible = "zmk,combos";
 
         lto_sym {
-            bindings = <&kp LEFT_GUI>;
+            bindings = <&mo 2>;
             key-positions = <28 27>;
             timeout-ms = <20>;
             layers = <0>;
@@ -30,8 +30,8 @@
         };
 
         rto_sym {
-            bindings = <&kp RIGHT_GUI>;
-            key-positions = <31 32>;
+            bindings = <&mo 1>;
+            key-positions = <26 27 28>;
             timeout-ms = <20>;
             layers = <0>;
             require-prior-idle-ms = <150>;
