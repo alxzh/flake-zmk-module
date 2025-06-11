@@ -74,20 +74,6 @@
             label = "BT_CLR_4";
         };
 
-        arrow: arrow {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp MINUS &kp GT>;
-            label = "ARROW";
-        };
-
-        eqeq: eqeq {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp EQUAL>;
-            label = "EQEQ";
-        };
-
         mac_logout: mac_logout {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
