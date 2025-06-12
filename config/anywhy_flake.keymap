@@ -218,7 +218,8 @@
             bindings = <&kp SPACE>, <&kp TAB>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LGUI|MOD_LSFT)>;
+            keep-mods = <(MOD_LGUI)>;
         };
 
         lt_spc_tab: lt_spc_tab {
