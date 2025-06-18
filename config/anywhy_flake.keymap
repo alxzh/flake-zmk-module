@@ -218,7 +218,7 @@
             bindings = <&kp SPACE>, <&kp TAB>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LGUI|MOD_LCTL)>;
+            mods = <(MOD_LGUI|MOD_LSFT)>;
             keep-mods = <(MOD_LGUI)>;
         };
 
