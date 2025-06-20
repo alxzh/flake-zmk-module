@@ -302,7 +302,7 @@
 &none  &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE       &kp CARET   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPERSAND  &kp BACKSLASH  &none
 &none  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp HASH       &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp COLON      &none
 &none  &kp AT_SIGN      &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT    &kp TILDE   &kp UNDERSCORE        &kp COMMA              &kp PERIOD     &kp QUESTION   &none
-       &trans           &trans         &trans            &kp TAB            &trans         &kp ENTER   &trans                &trans                 &trans         &trans
+       &trans           &trans         &trans            &kp TAB            &trans         &kp ENTER   &kp BACKSPACE         &trans                 &trans         &trans
             >;
         };
 
