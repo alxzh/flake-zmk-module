@@ -268,11 +268,11 @@
 
         night {
             bindings = <
-&trans  &trans             &trans               &trans         &trans          &trans    &trans     &trans       &trans         &trans                &trans              &trans
-&trans  &kp B              &kp F                &kp L          &kp K           &kp Q     &kp P      &kp G        &kp O          &kp U                 &kp PERIOD          &trans
-&trans  &hml LEFT_SHIFT N  &hml LEFT_CONTROL S  &ltl 4 H       &hml LCMD T     &kp M     &kp Y      &hmr RCMD C  &ltr 4 A       &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &trans
-&trans  &kp X              &kp V                &kp J          &kp D           &kp Z     &kp SQT    &kp W        &kp MINUS      &kp SLASH             &kp COMMA           &trans
-        &trans             &trans               &kp SEMICOLON  &ltl_r_tab 2 0  &gresc    &kp ENTER  &lt 3 SPACE  &kp BACKSPACE  &trans                &trans
+&trans  &trans             &trans               &trans               &trans    &trans    &trans     &trans       &trans                &trans                &trans              &trans
+&trans  &kp B              &kp F                &kp L                &kp K     &kp Q     &kp P      &kp G        &kp O                 &kp U                 &kp PERIOD          &trans
+&trans  &hml LEFT_SHIFT N  &hml LEFT_CONTROL S  &hml LEFT_COMMAND H  &ltl 4 T  &kp M     &kp Y      &ltr 4 C     &hmr RIGHT_COMMAND A  &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &trans
+&trans  &kp X              &kp V                &kp J                &kp D     &kp Z     &kp SQT    &kp W        &kp MINUS             &kp SLASH             &kp COMMA           &trans
+        &trans             &trans               &kp SEMICOLON        &lt 2 R   &gresc    &kp ENTER  &lt 3 SPACE  &kp BACKSPACE         &trans                &trans
             >;
         };
 
@@ -302,7 +302,7 @@
 &none  &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE       &kp CARET   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPERSAND  &kp BACKSLASH  &none
 &none  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp HASH       &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp COLON      &none
 &none  &kp AT_SIGN      &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT    &kp TILDE   &kp UNDERSCORE        &kp COMMA              &kp PERIOD     &kp QUESTION   &none
-       &trans           &trans         &trans            &trans             &trans         &kp ENTER   &trans                &trans                 &trans         &trans
+       &trans           &trans         &trans            &kp TAB            &trans         &kp ENTER   &trans                &trans                 &trans         &trans
             >;
         };
 
