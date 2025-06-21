@@ -231,25 +231,13 @@
             flavor = "balanced";
         };
 
-        r_tab: r_tab {
+        bsp_enter: bsp_enter {
             compatible = "zmk,behavior-mod-morph";
-            label = "R_TAB";
-            bindings = <&kp SPACE>, <&kp TAB>;
+            label = "BSP_ENTER";
+            bindings = <&kp BACKSPACE>, <&kp ENTER>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LGUI|MOD_LSFT)>;
-            keep-mods = <(MOD_LGUI)>;
-        };
-
-        ltl_r_tab: ltl_r_tab {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LTL_R_TAB";
-            bindings = <&mo>, <&r_tab>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            flavor = "balanced";
+            mods = <(MOD_RSFT|MOD_LSFT)>;
         };
     };
 
@@ -268,11 +256,11 @@
 
         night {
             bindings = <
-&trans  &trans             &trans               &trans               &trans    &trans           &trans     &trans       &trans                &trans                &trans              &trans
-&trans  &kp B              &kp F                &kp L                &kp K     &kp Q            &kp P      &kp G        &kp O                 &kp U                 &kp PERIOD          &trans
-&trans  &hml LEFT_SHIFT N  &hml LEFT_CONTROL S  &hml LEFT_COMMAND H  &ltl 4 T  &kp M            &kp Y      &ltr 4 C     &hmr RIGHT_COMMAND A  &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &trans
-&trans  &kp X              &kp V                &kp J                &kp D     &kp Z            &kp SQT    &kp W        &kp MINUS             &kp SLASH             &kp COMMA           &trans
-        &trans             &trans               &gresc               &lt 2 R   &kp BACKSPACE    &kp ENTER  &lt 3 SPACE  &kp DELETE            &trans                &trans
+&trans  &trans             &trans               &trans               &trans    &trans    &trans      &trans       &trans                &trans                &trans              &trans
+&trans  &kp B              &kp F                &kp L                &kp K     &kp Q     &kp P       &kp G        &kp O                 &kp U                 &kp PERIOD          &trans
+&trans  &hml LEFT_SHIFT N  &hml LEFT_CONTROL S  &hml LEFT_COMMAND H  &ltl 4 T  &kp M     &kp Y       &ltr 4 C     &hmr RIGHT_COMMAND A  &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &trans
+&trans  &kp X              &kp V                &kp J                &kp D     &kp Z     &kp SQT     &kp W        &kp MINUS             &kp SLASH             &kp COMMA           &trans
+        &trans             &trans               &kp TAB              &lt 2 R   &gresc    &bsp_enter  &lt 3 SPACE  &kp BACKSPACE         &trans                &trans
             >;
         };
 
