@@ -256,11 +256,11 @@
 
         night {
             bindings = <
-&trans  &trans             &trans               &trans               &trans    &trans    &trans      &trans       &trans                &trans                &trans              &trans
-&trans  &kp B              &kp F                &kp L                &kp K     &kp Q     &kp P       &kp G        &kp O                 &kp U                 &kp PERIOD          &trans
-&trans  &hml LEFT_SHIFT N  &hml LEFT_CONTROL S  &hml LEFT_COMMAND H  &ltl 4 T  &kp M     &kp Y       &ltr 4 C     &hmr RIGHT_COMMAND A  &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &trans
-&trans  &kp X              &kp V                &kp J                &kp D     &kp Z     &kp SQT     &kp W        &kp MINUS             &kp SLASH             &kp COMMA           &trans
-        &trans             &trans               &kp TAB              &lt 2 R   &gresc    &bsp_enter  &lt 3 SPACE  &kp ENTER             &trans                &trans
+&trans  &trans             &trans               &trans               &trans    &trans    &trans     &trans       &trans                &trans                &trans              &trans
+&trans  &kp B              &kp F                &kp L                &kp K     &kp Q     &kp P      &kp G        &kp O                 &kp U                 &kp PERIOD          &trans
+&trans  &hml LEFT_SHIFT N  &hml LEFT_CONTROL S  &hml LEFT_COMMAND H  &ltl 4 T  &kp M     &kp Y      &ltr 4 C     &hmr RIGHT_COMMAND A  &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &trans
+&trans  &kp X              &kp V                &kp J                &kp D     &kp Z     &kp SQT    &kp W        &kp MINUS             &kp SLASH             &kp COMMA           &trans
+        &trans             &trans               &kp TAB              &lt 2 R   &gresc    &kp ENTER  &lt 3 SPACE  &kp BACKSPACE         &trans                &trans
             >;
         };
 
