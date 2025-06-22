@@ -230,6 +230,16 @@
             quick-tap-ms = <200>;
             flavor = "balanced";
         };
+
+        enter_tab: enter_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ENTER_TAB";
+            bindings = <&kp ENTER>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI|MOD_LCTL)>;
+            keep-mods = <(MOD_LGUI)>;
+        };
     };
 
     keymap {
@@ -247,11 +257,11 @@
 
         night {
             bindings = <
-&trans  &trans             &trans               &trans               &trans    &trans      &trans     &trans           &trans                &trans                &trans              &trans
-&trans  &kp B              &kp F                &kp L                &kp D     &kp Q       &kp SQT    &kp W            &kp O                 &kp U                 &kp SLASH           &trans
-&trans  &hml LEFT_SHIFT N  &hml LEFT_CONTROL S  &hml LEFT_COMMAND H  &ltl 4 T  &kp J       &kp Y      &ltr 4 C         &hmr RIGHT_COMMAND A  &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &trans
-&trans  &kp X              &kp V                &kp M                &kp P     &kp Z       &kp MINUS  &kp G            &kp K                 &kp PERIOD            &kp COMMA           &trans
-        &trans             &trans               &gresc               &lt 2 R   &spc_tab    &kp ENTER  &lt 3 BACKSPACE  &kp DELETE            &trans                &trans
+&trans  &trans             &trans               &trans               &trans    &trans        &trans         &trans       &trans                &trans                &trans              &trans
+&trans  &kp B              &kp F                &kp L                &kp D     &kp Q         &kp SQT        &kp W        &kp O                 &kp U                 &kp SLASH           &trans
+&trans  &hml LEFT_SHIFT N  &hml LEFT_CONTROL S  &hml LEFT_COMMAND H  &ltl 4 T  &kp J         &kp Y          &ltr 4 C     &hmr RIGHT_COMMAND A  &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &trans
+&trans  &kp X              &kp V                &kp M                &kp P     &kp Z         &kp MINUS      &kp G        &kp K                 &kp PERIOD            &kp COMMA           &trans
+        &trans             &trans               &gresc               &lt 2 R   &enter_tab    &kp BACKSPACE  &lt 3 SPACE  &kp DELETE            &trans                &trans
             >;
         };
 
