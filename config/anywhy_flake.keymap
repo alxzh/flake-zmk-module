@@ -192,7 +192,7 @@
             quick-tap-ms = <175>;
             flavor = "balanced";
             hold-trigger-on-release;
-            hold-trigger-key-positions = <18 18 19 20 21 22 30 31 32 33 34 42 43 44 45 46>;
+            hold-trigger-key-positions = <18 18 19 20 21 22 30 31 32 33 34 42 43 44 45 46 51 50 52 53 54 55>;
             require-prior-idle-ms = <100>;
         };
 
@@ -205,7 +205,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             flavor = "balanced";
-            hold-trigger-key-positions = <13 14 15 16 25 26 27 28 37 38 39 40 17 29 41>;
+            hold-trigger-key-positions = <13 14 15 16 25 26 27 28 37 38 39 40 17 29 41 50 51 52 53 54 55>;
             hold-trigger-on-release;
             require-prior-idle-ms = <100>;
         };
@@ -230,15 +230,6 @@
             quick-tap-ms = <200>;
             flavor = "balanced";
         };
-
-        bsp_enter: bsp_enter {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BSP_ENTER";
-            bindings = <&kp BACKSPACE>, <&kp ENTER>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
-        };
     };
 
     keymap {
@@ -256,11 +247,11 @@
 
         night {
             bindings = <
-&trans  &trans             &trans               &trans               &trans    &trans    &trans     &trans       &trans                &trans                &trans              &trans
-&trans  &kp B              &kp F                &kp L                &kp K     &kp Q     &kp P      &kp G        &kp O                 &kp U                 &kp PERIOD          &trans
-&trans  &hml LEFT_SHIFT N  &hml LEFT_CONTROL S  &hml LEFT_COMMAND H  &ltl 4 T  &kp M     &kp Y      &ltr 4 C     &hmr RIGHT_COMMAND A  &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &trans
-&trans  &kp X              &kp V                &kp J                &kp D     &kp Z     &kp SQT    &kp W        &kp MINUS             &kp SLASH             &kp COMMA           &trans
-        &trans             &trans               &kp TAB              &lt 2 R   &gresc    &kp ENTER  &lt 3 SPACE  &kp BACKSPACE         &trans                &trans
+&trans  &trans             &trans               &trans               &trans    &trans     &trans     &trans       &trans                &trans                &trans              &trans
+&trans  &kp B              &kp F                &kp L                &kp D     &kp Q      &kp K      &kp G        &kp O                 &kp U                 &kp PERIOD          &trans
+&trans  &hml LEFT_SHIFT N  &hml LEFT_CONTROL S  &hml LEFT_COMMAND H  &ltl 4 T  &kp J      &kp Y      &ltr 4 C     &hmr RIGHT_COMMAND A  &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &trans
+&trans  &kp X              &kp V                &kp M                &kp P     &kp Z      &kp SQT    &kp W        &kp SEMICOLON         &kp SLASH             &kp COMMA           &trans
+        &trans             &trans               &gresc               &lt 2 R   &kp TAB    &kp ENTER  &lt 3 SPACE  &kp BACKSPACE         &trans                &trans
             >;
         };
 
@@ -290,7 +281,7 @@
 &none  &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE       &kp CARET   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPERSAND  &kp BACKSLASH  &none
 &none  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp HASH       &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp COLON      &none
 &none  &kp AT_SIGN      &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT    &kp TILDE   &kp UNDERSCORE        &kp COMMA              &kp PERIOD     &kp QUESTION   &none
-       &trans           &trans         &trans            &kp TAB            &trans         &kp ENTER   &kp BACKSPACE         &trans                 &trans         &trans
+       &trans           &trans         &trans            &kp SPACE          &trans         &kp ENTER   &kp BACKSPACE         &trans                 &trans         &trans
             >;
         };
 
