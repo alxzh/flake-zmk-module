@@ -287,11 +287,11 @@
 
         night {
             bindings = <
-&trans      &trans             &trans               &trans               &trans         &trans       &trans     &trans       &trans                &trans                &trans              &trans
-&kp ESCAPE  &kp B              &kp F                &kp L                &kp D          &kp SLASH    &kp SQT    &kp W        &kp O                 &kp U                 &kp Q               &kp DELETE
-&kp TAB     &hml LEFT_SHIFT N  &hml LEFT_CONTROL S  &hml LEFT_COMMAND H  &ltl 4 T       &kp J        &kp Y      &ltr 4 C     &hmr RIGHT_COMMAND A  &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &kp SEMICOLON
-&caps_word  &kp X              &kp V                &kp M                &kp P          &kp Z        &kp MINUS  &kp G        &kp K                 &kp PERIOD            &kp COMMA           &kp ENTER
-            &trans             &trans               &kp SEMICOLON        &lt_r_tab 2 0  &gresc       &kp ENTER  &lt 3 SPACE  &kp DELETE            &trans                &trans
+&trans      &trans             &trans               &trans               &trans         &trans       &trans         &trans       &trans                &trans                &trans              &trans
+&kp ESCAPE  &kp B              &kp F                &kp L                &kp D          &kp SLASH    &kp SQT        &kp W        &kp O                 &kp U                 &kp Q               &kp DELETE
+&kp TAB     &hml LEFT_SHIFT N  &hml LEFT_CONTROL S  &hml LEFT_COMMAND H  &ltl 4 T       &kp J        &kp Y          &ltr 4 C     &hmr RIGHT_COMMAND A  &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &kp SEMICOLON
+&caps_word  &kp X              &kp V                &kp M                &kp P          &kp Z        &kp MINUS      &kp G        &kp K                 &kp PERIOD            &kp COMMA           &kp ENTER
+            &trans             &trans               &kp SEMICOLON        &lt_r_tab 2 0  &gresc       &kp BACKSPACE  &lt 3 SPACE  &kp DELETE            &trans                &trans
             >;
         };
 
@@ -307,10 +307,10 @@
 
         nav {
             bindings = <
-&none  &none           &none             &none             &none         &none         &none        &none          &none         &none         &none          &none
-&none  &none           &kp K_PREV        &kp K_PLAY_PAUSE  &kp K_NEXT    &none         &mac_logout  &kp C_MUTE     &kp C_VOL_DN  &kp C_VOL_UP  &kp DEL        &none
-&none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT      &kp LEFT_GUI  &caps_word    &kp LEFT     &kp DOWN       &kp UP        &kp RIGHT     &kp BACKSPACE  &none
-&none  &none           &none             &none             &none         &none         &kp HOME     &kp PAGE_DOWN  &kp PG_UP     &kp END       &kp ENTER      &none
+&none  &none           &none             &none             &none         &none         &none        &none          &none         &none         &none      &none
+&none  &none           &kp K_PREV        &kp K_PLAY_PAUSE  &kp K_NEXT    &none         &mac_logout  &kp C_MUTE     &kp C_VOL_DN  &kp C_VOL_UP  &kp DEL    &none
+&none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT      &kp LEFT_GUI  &caps_word    &kp LEFT     &kp DOWN       &kp UP        &kp RIGHT     &kp ENTER  &none
+&none  &none           &none             &none             &none         &none         &kp HOME     &kp PAGE_DOWN  &kp PG_UP     &kp END       &none      &none
        &none           &none             &trans            &trans        &trans        &trans       &trans         &trans        &none         &none
             >;
         };
