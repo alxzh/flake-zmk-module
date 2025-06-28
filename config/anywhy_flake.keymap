@@ -22,17 +22,17 @@
         compatible = "zmk,combos";
 
         to_night {
-            bindings = <&to 1>;
+            bindings = <&to 0>;
             key-positions = <26 27 28>;
             timeout-ms = <20>;
-            layers = <0>;
+            layers = <1>;
             require-prior-idle-ms = <150>;
         };
 
         to_graphite {
-            bindings = <&to 0>;
+            bindings = <&to 1>;
             key-positions = <26 27 28>;
-            layers = <1>;
+            layers = <0>;
         };
     };
 
@@ -275,16 +275,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base {
-            bindings = <
-&none       &none              &none                &none                       &none            &none     &none        &none             &none                &none                 &none               &none
-&kp ESC     &kp B              &kp L                &kp D                       &kp W            &kp Q     &kp SQT      &kp F             &kp O                &kp U                 &kp J               &kp DELETE
-&kp TAB     &hml LEFT_SHIFT N  &hml LEFT_CONTROL R  &ltl 4 T                    &hml LEFT_GUI S  &kp G     &kp Y        &hmr RIGHT_GUI H  &ltr 4 A             &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &kp SEMICOLON
-&caps_word  &kp X              &kp V                &kp M                       &kp C            &kp Z     &kp K        &kp P             &kp COMMA            &kp DOT               &kp SLASH           &kp ENTER
-            &none              &none                &mt LEFT_COMMAND SEMICOLON  &lt_spc_tab 2 0  &gresc    &lt 5 ENTER  &lt 3 BACKSPACE   &mt RIGHT_GUI MINUS  &none                 &none
-            >;
-        };
-
         night {
             bindings = <
 &trans      &trans             &trans               &trans               &trans         &trans       &trans         &trans       &trans                &trans                &trans              &trans
@@ -292,6 +282,16 @@
 &kp TAB     &hml LEFT_SHIFT N  &hml LEFT_CONTROL S  &hml LEFT_COMMAND H  &ltl 4 T       &kp J        &kp Y          &ltr 4 C     &hmr RIGHT_COMMAND A  &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &kp SEMICOLON
 &caps_word  &kp X              &kp V                &kp M                &kp P          &kp Z        &kp MINUS      &kp G        &kp K                 &kp PERIOD            &kp COMMA           &kp ENTER
             &trans             &trans               &gresc               &lt_r_tab 2 0  &kp ENTER    &kp BACKSPACE  &lt 3 SPACE  &kp DELETE            &trans                &trans
+            >;
+        };
+
+        base {
+            bindings = <
+&none       &none              &none                &none                       &none            &none     &none        &none             &none                &none                 &none               &none
+&kp ESC     &kp B              &kp L                &kp D                       &kp W            &kp Q     &kp SQT      &kp F             &kp O                &kp U                 &kp J               &kp DELETE
+&kp TAB     &hml LEFT_SHIFT N  &hml LEFT_CONTROL R  &ltl 4 T                    &hml LEFT_GUI S  &kp G     &kp Y        &hmr RIGHT_GUI H  &ltr 4 A             &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &kp SEMICOLON
+&caps_word  &kp X              &kp V                &kp M                       &kp C            &kp Z     &kp K        &kp P             &kp COMMA            &kp DOT               &kp SLASH           &kp ENTER
+            &none              &none                &mt LEFT_COMMAND SEMICOLON  &lt_spc_tab 2 0  &gresc    &lt 5 ENTER  &lt 3 BACKSPACE   &mt RIGHT_GUI MINUS  &none                 &none
             >;
         };
 
