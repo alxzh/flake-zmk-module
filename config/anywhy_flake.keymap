@@ -277,11 +277,11 @@
 
         night {
             bindings = <
-&trans      &trans             &trans               &trans               &trans         &trans       &trans         &trans       &trans                &trans                &trans              &trans
-&kp ESCAPE  &kp B              &kp F                &kp L                &kp D          &kp Q        &kp SLASH      &kp W        &kp O                 &kp U                 &kp SQT             &kp DELETE
-&kp TAB     &hml LEFT_SHIFT N  &hml LEFT_CONTROL S  &hml LEFT_COMMAND H  &ltl 4 T       &kp J        &kp Y          &ltr 4 C     &hmr RIGHT_COMMAND A  &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &kp SEMICOLON
-&caps_word  &kp X              &kp V                &kp M                &kp P          &kp Z        &kp MINUS      &kp G        &kp K                 &kp PERIOD            &kp COMMA           &kp ENTER
-            &trans             &trans               &gresc               &lt_r_tab 2 0  &kp ENTER    &kp BACKSPACE  &lt 3 SPACE  &kp DELETE            &trans                &trans
+&trans      &trans             &trans               &trans               &trans         &trans           &trans     &trans       &trans                &trans                &trans              &trans
+&kp ESCAPE  &kp B              &kp F                &kp L                &kp D          &kp Q            &kp SLASH  &kp W        &kp O                 &kp U                 &kp SQT             &kp DELETE
+&kp TAB     &hml LEFT_SHIFT N  &hml LEFT_CONTROL S  &hml LEFT_COMMAND H  &ltl 4 T       &kp K            &kp Y      &ltr 4 C     &hmr RIGHT_COMMAND A  &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &kp SEMICOLON
+&caps_word  &kp X              &kp V                &kp M                &kp P          &kp J            &kp MINUS  &kp G        &kp Z                 &kp PERIOD            &kp COMMA           &kp ENTER
+            &trans             &trans               &gresc               &lt_r_tab 2 0  &kp BACKSPACE    &kp ENTER  &lt 3 SPACE  &kp COLON             &trans                &trans
             >;
         };
 
