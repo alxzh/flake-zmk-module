@@ -297,21 +297,21 @@
 
         num {
             bindings = <
-&none  &none           &none             &none         &none         &none         &none       &none          &none         &none         &none         &none
-&none  &none           &none             &none         &none         &none         &kp PLUS    &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &none
-&none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &caps_word    &kp MINUS   &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &none
-&none  &mac_undo       &macos_cut        &mac_copy     &mac_paste    &none         &kp PERIOD  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &none
-       &none           &none             &trans        &trans        &trans        &kp ENTER   &kp BACKSPACE  &trans        &none         &none
+&none  &none           &none             &none      &none         &none         &none       &none          &none         &none         &none         &none
+&none  &none           &none             &none      &none         &none         &kp PLUS    &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &none
+&none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LCMD   &kp LEFT_ALT  &caps_word    &kp MINUS   &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &none
+&none  &mac_undo       &macos_cut        &mac_copy  &mac_paste    &none         &kp PERIOD  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &none
+       &none           &none             &trans     &trans        &trans        &kp ENTER   &kp BACKSPACE  &trans        &none         &none
             >;
         };
 
         nav {
             bindings = <
-&none  &none           &none             &none             &none         &none         &none   &none       &none              &none         &none        &none
-&none  &none           &kp K_PREV        &kp K_PLAY_PAUSE  &kp K_NEXT    &none         &none   &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &mac_logout  &none
-&none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT      &kp LEFT_GUI  &caps_word    &none   &kp LEFT    &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT    &none
-&none  &none           &none             &none             &none         &none         &none   &kp HOME    &kp PAGE_DOWN      &kp PG_UP     &kp END      &none
-       &none           &none             &trans            &trans        &trans        &trans  &trans      &trans             &none         &none
+&none  &none           &none             &none             &none       &none         &none   &none       &none              &none         &none        &none
+&none  &none           &kp K_PREV        &kp K_PLAY_PAUSE  &kp K_NEXT  &none         &none   &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &mac_logout  &none
+&none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LCMD          &kp LALT    &caps_word    &none   &kp LEFT    &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT    &none
+&none  &none           &none             &none             &none       &none         &none   &kp HOME    &kp PAGE_DOWN      &kp PG_UP     &kp END      &none
+       &none           &none             &trans            &trans      &trans        &trans  &trans      &trans             &none         &none
             >;
         };
 
