@@ -278,9 +278,9 @@
         night {
             bindings = <
 &trans      &trans             &trans               &trans               &trans         &trans       &trans     &trans       &trans                &trans                &trans              &trans
-&kp ESCAPE  &kp B              &kp F                &kp L                &kp D          &kp Q        &kp Z      &kp W        &kp O                 &kp U                 &kp J               &kp DELETE
-&kp TAB     &hml LEFT_SHIFT N  &hml LEFT_CONTROL S  &hml LEFT_COMMAND H  &ltl 4 T       &kp K        &kp Y      &ltr 4 C     &hmr RIGHT_COMMAND A  &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &kp SEMICOLON
-&caps_word  &kp X              &kp V                &kp M                &kp P          &kp MINUS    &kp SQT    &kp G        &kp COMMA             &kp PERIOD            &kp SLASH           &kp ENTER
+&kp ESCAPE  &kp B              &kp F                &kp L                &kp D          &kp Q        &kp SQT    &kp W        &kp O                 &kp U                 &kp J               &kp DELETE
+&kp TAB     &hml LEFT_SHIFT N  &hml LEFT_CONTROL S  &hml LEFT_COMMAND H  &ltl 4 T       &kp K        &kp Z      &ltr 4 C     &hmr RIGHT_COMMAND A  &hmr RIGHT_CONTROL E  &hmr RIGHT_SHIFT I  &kp SEMICOLON
+&caps_word  &kp X              &kp V                &kp M                &kp P          &kp MINUS    &kp SLASH  &kp G        &kp Y                 &kp PERIOD            &kp COMMA           &kp ENTER
             &trans             &trans               &kp SEMICOLON        &lt_r_tab 2 0  &gresc       &kp ENTER  &lt 3 SPACE  &kp BACKSPACE         &trans                &trans
             >;
         };
